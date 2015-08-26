@@ -86,7 +86,7 @@ header h1, header p {
 
 header p {
     font: 1.7em ltuniversbasicmedium; 
-    color: #999;
+    color: #333;
     text-transform: uppercase;
     letter-spacing: 2px;
 }

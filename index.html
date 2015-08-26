@@ -62,7 +62,7 @@
                     </article>
 
                     <article>
-                        <h3 class="smoothScroll">Pratiche</h3>
+                        <h3 id="pratiche">Pratiche</h3>
 
                         <h4>Experience mapping and analysis</h4>
                         <p class="subtitle">Leadership</p>
@@ -170,22 +170,5 @@
         </script>
 
         <script type="text/javascript" src="js/jquery.tableofcontents.min.js"></script> 
-        
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $("#wrapper").tableofcontents({
-                id: "#tableofcontents"
-            });      
-        });
-        </script>
-
-        <script type="text/javascript">
-            jQuery(document).ready(function($) {
-                $(".smoothScroll").click(function(event) {
-                    event.preventDefault();
-                    $('html,body').animate( { scrollTop:$(this.hash).offset().top } , 1000);
-                } );
-            } );
-    </script>
     </body>
 </html>
