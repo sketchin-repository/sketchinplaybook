@@ -24,9 +24,7 @@
 
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
-            <ul id="toc">
-                
-            </ul>
+            <div id="tableofcontents"></div>
 
             <div id="content">
 
@@ -64,9 +62,9 @@
                     </article>
 
                     <article>
-                        <h3>Pratiche</h3>
+                        <h3 class="smoothScroll">Pratiche</h3>
 
-                        <h4>Experience mapping &amp; analysis</h4>
+                        <h4>Experience mapping and analysis</h4>
                         <p class="subtitle">Leadership</p>
                         <img src="img/experiencemappingandanalysis.jpg" alt="Experience mapping and analysis">
 
@@ -90,7 +88,7 @@
                         <p class="subtitle">Management</p>
                         <img src="img/designpair.png" alt="Design pair">
 
-                        <h4>Rapid prototyping &amp; experiments</h4>
+                        <h4>Rapid prototyping and experiments</h4>
                         <p class="subtitle">Management</p>
                         <img src="img/rapidpropotypingandexperiments.png" alt="Rapid prototyping and experiments">
 
@@ -160,6 +158,34 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/plugins.js"></script>
+
+        <script src="js/jquery.lazyload.js"></script>
         <script src="js/main.js"></script>
+
+        <script type="text/javascript">
+        // Lazyloader function
+        $(function() {
+            $("img").lazyload();
+        });
+        </script>
+
+        <script type="text/javascript" src="js/jquery.tableofcontents.min.js"></script> 
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#wrapper").tableofcontents({
+                id: "#tableofcontents"
+            });      
+        });
+        </script>
+
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $(".smoothScroll").click(function(event) {
+                    event.preventDefault();
+                    $('html,body').animate( { scrollTop:$(this.hash).offset().top } , 1000);
+                } );
+            } );
+    </script>
     </body>
 </html>
