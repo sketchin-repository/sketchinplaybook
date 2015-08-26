@@ -62,7 +62,7 @@ body {
    Header
    ========================================================================== */
 header {
-    height: 55em;
+    height: 50em;
     background: #0078bc url('../img/cover.png') center bottom no-repeat;
     background-size: cover;
     width: 100%;
@@ -104,15 +104,36 @@ h2 {
 }
 
 h3 {
-    font: 4.5em ltuniversbasiclight; 
+    font: 4.5em ltuniversbasiclight;
+    margin-top: 2em;
 }
 
 h4 {
     font: 2.105em ltuniversbasicregular; 
+    margin-top: 4em;
 }
 
 p, li {
     font: 1.8em/1.5em ltuniversbasicregular; 
+}
+
+ul {
+    padding-left: 4em;
+    margin: 4em 0;
+}
+
+ul li:before {
+  content: '\2014\00a0\00a0'; /* em-dash followed by two non-breaking spaces*/
+}
+
+ul li {
+  list-style: none;
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+    padding-left: 8em;
+    margin: 4em 0;
 }
 
 a {
@@ -149,6 +170,12 @@ h1, h2, h3 {
     text-align: center;
 }
 
+.subtitle {
+    font-family: ltuniversbasiclight;
+    color: #999;
+    margin: 1em 0;
+}
+
 /* ==========================================================================
    Content
    ========================================================================== */
@@ -157,8 +184,14 @@ section {
     margin-bottom: 7em;
 }
 
+article:last-child {
+    border-bottom: none;
+}
+
 article {
     margin-bottom: 7em;
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 4em;
 }
 
 img {
