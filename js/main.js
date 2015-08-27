@@ -32,7 +32,7 @@ function scrollToTop() {
 
       $(window).scroll(function() {
           //Check to see if the window is on top otherwise display the button
-          if ($(this).scrollTop() > _scrollValue + 100) {
+          if ($(this).scrollTop() > _scrollValue + 200) {
             $('#scrollToTop').fadeIn('slow');
           } else {
             $('#scrollToTop').fadeOut('slow');
@@ -49,7 +49,9 @@ function scrollToTop() {
 
 function lazyLoading() {
     // Initialize images lazy loading 
-     $("#content img").lazyload();
+     $("#content img").lazyload({
+      effect: 'fadeIn'
+    });
 }
 
 $(document).ready(function() {
