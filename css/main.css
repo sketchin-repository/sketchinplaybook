@@ -63,7 +63,7 @@ body {
    ========================================================================== */
 header {
     height: 50em;
-    background: #0078bc url('../img/cover.png') center bottom no-repeat;
+    background: #0078bc url('../img/_assets/cover.png') center bottom no-repeat;
     background-size: cover;
     width: 100%;
     margin-bottom: 7em;
@@ -71,7 +71,7 @@ header {
 
 #logo {
     margin: 0 auto;
-    background: url('../img/logo.png') no-repeat;
+    background: url('../img/_assets/logo.png') no-repeat;
     width: 7em;
     height: 7em;
     background-size: contain;
@@ -206,6 +206,14 @@ img {
     width: 100%;
     margin: 4em 0;
     height: auto;
+}
+
+#scrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 3em;
+    right: 3em;
+    font: 1.3em ltuniversbasiclight; 
 }
 
 /* ==========================================================================
