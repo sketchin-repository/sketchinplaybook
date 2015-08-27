@@ -160,6 +160,10 @@ h1, h2, h3 {
 /* ==========================================================================
    Lists
    ========================================================================== */
+ul li, ol li {
+  list-style: none;
+}
+
 ul {
     padding-left: 4em;
     margin: 4em 0;
@@ -172,18 +176,10 @@ ul li:before {
   font-size: .95em;
 }
 
-ul li, ol li {
-  list-style: none;
-}
-/*
-ol {
-    list-style-type: decimal-leading-zero;
-}*/
-
-
 ol {
     counter-reset: i 0;
 }
+
 ol li:before {
     content: "0" counter(i) ".";    
     counter-increment: i;
@@ -193,10 +189,6 @@ ol li:before {
     font-size: 1em;
 }
 
-/*li span {
-    color: #000;
-}
-*/
 /* ==========================================================================
    Table of Contents
    ========================================================================== */
@@ -232,9 +224,9 @@ img {
 #scrollToTop {
     display: none;
     position: fixed;
-    bottom: 3em;
-    right: 3em;
-    font: 1.3em ltuniversbasiclight; 
+    bottom: 2.5em;
+    right: 7em;
+    font: 1.3em ltuniversbasicregular; 
 }
 
 /* ==========================================================================
