@@ -109,31 +109,12 @@ h3 {
 }
 
 h4 {
-    font: 2.105em ltuniversbasicregular; 
+    font: 2.7em ltuniversbasicregular; 
     margin-top: 4em;
 }
 
 p, li {
     font: 1.8em/1.5em ltuniversbasicregular; 
-}
-
-ul {
-    padding-left: 4em;
-    margin: 4em 0;
-}
-
-ul li:before {
-  content: '\2014\00a0\00a0'; /* em-dash followed by two non-breaking spaces*/
-}
-
-ul li {
-  list-style: none;
-}
-
-ol {
-    list-style-type: decimal-leading-zero;
-    padding-left: 8em;
-    margin: 4em 0;
 }
 
 a {
@@ -176,6 +157,46 @@ h1, h2, h3 {
     margin: 1em 0;
 }
 
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+ul {
+    padding-left: 4em;
+    margin: 4em 0;
+}
+
+ul li:before {
+  content: '\2014\00a0\00a0'; /* em-dash followed by two non-breaking spaces*/
+  color: #999;
+  font-family: ltuniversbasiclight;
+  font-size: .95em;
+}
+
+ul li, ol li {
+  list-style: none;
+}
+/*
+ol {
+    list-style-type: decimal-leading-zero;
+}*/
+
+
+ol {
+    counter-reset: i 0;
+}
+ol li:before {
+    content: "0" counter(i) ".";    
+    counter-increment: i;
+    padding-right: 0.5em;
+    color: #999;
+    font-family: ltuniversbasiclight;
+    font-size: 1em;
+}
+
+/*li span {
+    color: #000;
+}
+*/
 /* ==========================================================================
    Table of Contents
    ========================================================================== */
