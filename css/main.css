@@ -50,7 +50,8 @@ textarea {
 body {
     font-family: ltuniversbasicregular, sans-serif; 
     font-size: 10px;
-    background-color: #fffbfb;
+    /*background-color: #fffbfb;*/
+    background-color: #fff;
 }
 
 #wrapper {
